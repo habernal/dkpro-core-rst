@@ -1,0 +1,42 @@
+
+noSpaceText:
+thatthey"
+Buffer:
+thatthey''llgrowupabit(over-)sheltered?Learninghowtointeractwithothersisalsoacruciallesoninlife,afterall.@Keo(attop)Goodpoint.
+0:Hang 1:on 2:. 3:Did 4:you 5:actually 6:ask 7:the 8:teacher 9:about 10:what 11:he 12:said 13:? 14:Sounds 15:like 16:a 17:rather 18:rash 19:decision 20:... 21:As 22:for 23:home 24:schooling 25:- 26:are 27:n't 28:you 29:worried 30:that 31:they 32:''ll 33:grow 34:up 35:a 36:bit 37:( 38:over-)sheltered 39:? 40:Learning 41:how 42:to 43:interact 44:with 45:others 46:is 47:also 48:a 49:crucial 50:leson 51:in 52:life 53:, 54:after 55:all 56:. 57:@ 58:Keo 59:( 60:at 61:top 62:) 63:Good 64:point 65:.
+--- not solveable
+
+
+
+999_null_artcomment_homeschooling.xmi:
+SurfersaiyanHomeEducationisformeveryfarfromapoliticalstatement.
+Buffer:
+Surfersaiyan-HomeEducationisformeveryfarfromapoliticalstatement.Itis,onthecontrary,apersonaldecisionmadeinthebestinterestsofmychildrenandmyfamily
+--- unsolvable
+
+Mapping went wrong!
+noSpaceText:
+LambageParents
+Buffer:
+Lambage-Parentswhodon'tgiveadamndonotusuallyadopthomeschooling.
+0:Lambage 1:- 2:Parents 3:who 4:do 5:n't 6:give 7:a 8:damn 9:do 10:not 11:usually 12:adopt 13:home 14:schooling 15:.
+
+
+
+1152_null_artcomment_homeschooling.xmi
+whilemyMumtaughtushumanities,Englishetchome
+Buffer:
+whilemyMumtaughtushumanities,Englishetc.home(generally
+
+
+noSpaceText:
+(schools,neighbours,etc)
+Buffer:
+(schools,neighbours,etc.)reportedthefailure.Thechild'sdeathwasnotpreventedbuttheauthoritiesdidnotcarryouttheirduty.Similarly,Ihaveaduty(EducationAct,section7)toeducatemychildrenbutthereisnostatutorydutytomonitor
+
+
+
+noSpaceText:
+"Thismightsoundabitcranky
+Buffer:
+''Thismightsoundabitcrankybutthereisasocialbenefitinlettingchildrenrunaroundtherecreationgroundwithlotsofotherkidsoftheirownage
