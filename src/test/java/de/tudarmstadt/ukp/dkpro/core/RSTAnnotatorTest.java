@@ -58,23 +58,22 @@ public class RSTAnnotatorTest
 
         // tokenize
         SimplePipeline.runPipeline(jCas,
-                AnalysisEngineFactory.createEngineDescription(StanfordSegmenter.class)
-        );
+                AnalysisEngineFactory.createEngineDescription(StanfordSegmenter.class));
     }
 
+    @Ignore
     @Test
     public void testParse()
             throws Exception
     {
-        SimplePipeline.runPipeline(jCas,
-                AnalysisEngineFactory.createEngineDescription(RSTAnnotator.class,
-                        RSTAnnotator.PARAM_RST_PARSER_SRC_DIR_PATH,
-                        "/home/user-ukp/research/tools/discourse/Feng.Hirst.2014/gCRF_dist/src/"
-                ),
-                AnalysisEngineFactory.createEngineDescription(CasDumpWriter.class)
-        );
+        SimplePipeline.runPipeline(jCas, AnalysisEngineFactory
+                        .createEngineDescription(RSTAnnotator.class,
+                                RSTAnnotator.PARAM_RST_PARSER_SRC_DIR_PATH,
+                                "Feng.Hirst.2014/gCRF_dist/src/"),
+                AnalysisEngineFactory.createEngineDescription(CasDumpWriter.class));
     }
 
+    @Ignore
     @Test
     public void testProblem2()
             throws Exception
@@ -90,16 +89,13 @@ public class RSTAnnotatorTest
 
         // tokenize
         SimplePipeline.runPipeline(tmpCas,
-                AnalysisEngineFactory.createEngineDescription(StanfordSegmenter.class)
-        );
+                AnalysisEngineFactory.createEngineDescription(StanfordSegmenter.class));
 
-        SimplePipeline.runPipeline(tmpCas,
-                AnalysisEngineFactory.createEngineDescription(RSTAnnotator.class,
-                        RSTAnnotator.PARAM_RST_PARSER_SRC_DIR_PATH,
-                        "/home/user-ukp/research/tools/discourse/Feng.Hirst.2014/gCRF_dist/src/"
-                ),
-                AnalysisEngineFactory.createEngineDescription(CasDumpWriter.class)
-        );
+        SimplePipeline.runPipeline(tmpCas, AnalysisEngineFactory
+                        .createEngineDescription(RSTAnnotator.class,
+                                RSTAnnotator.PARAM_RST_PARSER_SRC_DIR_PATH,
+                                "Feng.Hirst.2014/gCRF_dist/src/"),
+                AnalysisEngineFactory.createEngineDescription(CasDumpWriter.class));
     }
 
     @Ignore
@@ -107,32 +103,16 @@ public class RSTAnnotatorTest
     public void testParseAll()
             throws Exception
     {
-        SimplePipeline.runPipeline(
-                CollectionReaderFactory.createReaderDescription(
-                        XmiReader.class, XmiReader.PARAM_SOURCE_LOCATION,
-                        //                        "/home/user-ukp/research/data/argumentation/gold-phase1-exported/gold/*.xmi",
-                        //                        "/home/user-ukp/research/data/argumentation/gold-phase1-exported/gold/5313_P2_artcomment_redshirting.xmi",
-                        //                        "/home/user-ukp/research/data/argumentation/gold-phase1-exported/gold/718_P1_artcomment_homeschooling.xmi",
-                        //                        "/home/user-ukp/research/data/argumentation/gold-phase1-exported/gold/724_P2_artcomment_homeschooling.xmi",
-                        //                        "/home/user-ukp/research/data/argumentation/gold-phase1-exported/gold/726_P2_artcomment_homeschooling.xmi",
-                        //                        "/home/user-ukp/research/data/argumentation/gold-phase1-exported/gold/730_P1_artcomment_homeschooling.xmi",
-                        //                        "/home/user-ukp/research/data/argumentation/gold-phase1-exported/gold/895_P1_artcomment_homeschooling.xmi",
-                        //                        "/home/user-ukp/research/data/argumentation/gold-phase1-exported/gold/1163_P2_artcomment_homeschooling.xmi",
-                        //                        "/home/user-ukp/research/data/argumentation/gold-phase1-exported/gold/5368_P1_artcomment_redshirting.xmi",
-                        //                        "/home/user-ukp/research/data/argumentation/gold-phase1-exported/gold/1043_P1_artcomment_homeschooling.xmi",
-                        "/home/user-ukp/research/data/argumentation/gold-phase1-exported/unlabeled/*.xmi",
-                        //                                                "/home/user-ukp/research/data/argumentation/gold-phase1-exported/unlabeled/1000_null_artcomment_homeschooling.xmi",
-                        XmiReader.PARAM_LENIENT, true
-                ),
+        SimplePipeline.runPipeline(CollectionReaderFactory
+                        .createReaderDescription(XmiReader.class, XmiReader.PARAM_SOURCE_LOCATION,
+                                "*.xmi", XmiReader.PARAM_LENIENT, true),
                 AnalysisEngineFactory.createEngineDescription(StanfordSegmenter.class),
                 AnalysisEngineFactory.createEngineDescription(RSTAnnotator.class,
                         RSTAnnotator.PARAM_RST_PARSER_SRC_DIR_PATH,
-                        "/home/user-ukp/research/tools/discourse/Feng.Hirst.2014/gCRF_dist/src/",
-                        RSTAnnotator.PARAM_SANITY_CHECK_ON_INIT, false,
-                        RSTAnnotator.PARAM_KEEP_TMP_FILES, true,
+                        "/Feng.Hirst.2014/gCRF_dist/src/", RSTAnnotator.PARAM_SANITY_CHECK_ON_INIT,
+                        false, RSTAnnotator.PARAM_KEEP_TMP_FILES, true,
                         RSTAnnotator.PARAM_DEBUG_RST_OUTPUT, false),
-                AnalysisEngineFactory.createEngineDescription(RSTDumpWriter.class)
-        );
+                AnalysisEngineFactory.createEngineDescription(RSTDumpWriter.class));
 
     }
 }
